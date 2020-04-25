@@ -42,3 +42,10 @@ TEST(PracticeTest, is_empty_string)
     bool actual = obj.isPalindrome("");
     ASSERT_FALSE(actual);
 }
+
+TEST(PracticeTest, has_special_characters)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("!@$@!");
+    ASSERT_TRUE(actual);
+}
