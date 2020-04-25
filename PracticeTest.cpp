@@ -73,3 +73,15 @@ TEST(PracticeTest, has_duplicate_values)
 	ASSERT_EQ(second, 10);
 	ASSERT_EQ(third, 1);
 }
+
+TEST(PracticeTest, has_negative_values)
+{
+    Practice obj;
+	int first = -10;
+	int second = -10000;
+	int third = 1;
+	obj.sortDescending(first, second, third);
+    ASSERT_EQ(first, 1);
+	ASSERT_EQ(second, -10);
+	ASSERT_EQ(third, -10000);
+}
