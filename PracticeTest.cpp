@@ -35,3 +35,10 @@ TEST(PracticeTest, is_simplest_palindrome)
     bool actual = obj.isPalindrome("a");
     ASSERT_TRUE(actual);
 }
+
+TEST(PracticeTest, is_empty_string)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("");
+    ASSERT_FALSE(actual);
+}
