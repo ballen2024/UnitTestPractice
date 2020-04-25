@@ -61,3 +61,15 @@ TEST(PracticeTest, is_already_sorted)
 	ASSERT_EQ(second, 2);
 	ASSERT_EQ(third, 1);
 }
+
+TEST(PracticeTest, is_already_sorted)
+{
+    Practice obj;
+	int first = 1;
+	int second = 10;
+	int third = 10;
+	obj.sortDescending(first, second, third);
+    ASSERT_EQ(first, 10);
+	ASSERT_EQ(second, 10);
+	ASSERT_EQ(third, 1);
+}
