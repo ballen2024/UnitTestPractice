@@ -85,3 +85,15 @@ TEST(PracticeTest, has_negative_values)
 	ASSERT_EQ(second, -10);
 	ASSERT_EQ(third, -10000);
 }
+
+TEST(PracticeTest, first_less_than_third)
+{
+    Practice obj;
+	int first = 5;
+	int second = 8;
+	int third = 10;
+	obj.sortDescending(first, second, third);
+    ASSERT_EQ(first, 10);
+	ASSERT_EQ(second, 8);
+	ASSERT_EQ(third, 5);
+}
