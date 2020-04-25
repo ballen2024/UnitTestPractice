@@ -13,18 +13,19 @@ void Practice::sortDescending(int & first, int & second, int & third)
     first = second;
     second = temp;
   }
-  if( second < third )
-  {
-    int temp = second;
-    second = third;
-    third = temp;
-  }
   if( first < third )
   {
     int temp = first;
     first = third;
     third = temp;
   }
+  if( second < third )
+  {
+    int temp = second;
+    second = third;
+    third = temp;
+  }
+  
 }
 
 // Receive a string and return whether or not it is strictly a palindrome,
@@ -33,7 +34,7 @@ void Practice::sortDescending(int & first, int & second, int & third)
 bool Practice::isPalindrome(string input)
 {
   if((int)input.size() == 0) return false;
-  
+
   for(int i=0; i < (int)input.size(); i++)
   {
     if( input[i] < 'A' || input[i] > 'Z' )
