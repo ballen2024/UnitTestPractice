@@ -53,11 +53,11 @@ TEST(PracticeTest, has_special_characters)
 TEST(PracticeTest, is_already_sorted)
 {
     Practice obj;
-	int first = 1;
+	int first = 3;
 	int second = 2;
-	int third = 3;
+	int third = 1;
 	obj.sortDescending(first, second, third);
-    ASSERT_EQ(first, 1);
+    ASSERT_EQ(first, 3);
 	ASSERT_EQ(second, 2);
-	ASSERT_EQ(third, 3);
+	ASSERT_EQ(third, 1);
 }
