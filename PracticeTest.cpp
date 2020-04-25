@@ -97,3 +97,15 @@ TEST(PracticeTest, first_less_than_third)
 	ASSERT_EQ(second, 8);
 	ASSERT_EQ(third, 5);
 }
+
+TEST(PracticeTest, ascending_order_test)
+{
+    Practice obj;
+	int first = 5;
+	int second = 8;
+	int third = 10;
+	obj.sortDescending(first, second, third);
+    ASSERT_NE(first, 5);
+	ASSERT_NE(second, 8);
+	ASSERT_NE(third, 10);
+}
