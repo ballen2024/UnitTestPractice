@@ -62,7 +62,7 @@ TEST(PracticeTest, is_already_sorted)
 	ASSERT_EQ(third, 1);
 }
 
-TEST(PracticeTest, is_already_sorted)
+TEST(PracticeTest, has_duplicate_values)
 {
     Practice obj;
 	int first = 1;
