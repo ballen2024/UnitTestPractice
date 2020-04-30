@@ -35,6 +35,9 @@ bool Practice::isPalindrome(string input)
 {
   if((int)input.size() == 0) return false;
 
+  // input.erase(std::find(input.begin(), input.end(), '\0'), input.end());
+  input.erase(input.find('\0'));
+
   for(int i=0; i < (int)input.size(); i++)
   {
     if( input[i] < 'A' || input[i] > 'Z' )
