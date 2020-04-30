@@ -53,7 +53,7 @@ TEST(PracticeTest, has_special_characters)
 TEST(PracticeTest, has_null)
 {
   Practice obj;
-  bool actual = obj.isPalindrom("\0abba\0");
+  bool actual = obj.isPalindrome("\0abba\0");
   ASSERT_TRUE(actual);
 }
 
