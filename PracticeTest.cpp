@@ -50,6 +50,13 @@ TEST(PracticeTest, has_special_characters)
     ASSERT_TRUE(actual);
 }
 
+TEST(PracticeTest, has_null)
+{
+  Practice obj;
+  bool actual = obj.isPalindrom("\0abba\0");
+  ASSERT_TRUE(actual);
+}
+
 TEST(PracticeTest, is_already_sorted)
 {
     Practice obj;
